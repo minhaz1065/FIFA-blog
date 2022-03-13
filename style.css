@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.container {
+    width: 1000px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+nav .menu>ul>li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.btn {
+    background-color: crimson;
+    padding: 10px 25px;
+    width: 100px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.banner-title {
+    margin: 20px;
+}
+
+.banner-title h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.button-animation {
+    border-radius: 4px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 200px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button-animation span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-animation span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-animation:hover span {
+    padding-right: 25px;
+}
+
+.button-animation:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.banner-item {
+    margin: 20px;
+    background-image: url('./images/bannerbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-img {
+    transition: transform 1s;
+}
+
+.banner-img:hover {
+    transform: translate(-100px, -100px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    margin: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.37);
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.about {
+    color: rgb(68, 65, 65);
+}
+
+.highlights {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.highlights-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.highlights-left h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 20px 0p;
+}
+
+.highlights-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.highlights-right img {
+    max-width: 500px;
+    max-height: 400px;
+    padding: 20px;
+}
+
+.get-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 200px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(245, 214, 214) 0%, rgb(250, 192, 255) 35%, rgb(150, 224, 247) 100%);
+}
+
+.get-btn {
+    padding: 20px;
+    background-color: crimson;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.get-btn:hover {
+    transform: scale(1.5);
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(177, 248, 253);
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+.sub-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 400px;
+    max-height: 100px;
+}
+
+.social-icon {
+    margin: 20px 0;
+}
+
+.social-icon i {
+    color: crimson;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.social-icon i:hover {
+    color: rgb(34, 20, 20);
+}
